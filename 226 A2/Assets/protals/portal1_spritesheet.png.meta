@@ -23,9 +23,6 @@ TextureImporter:
   - first:
       213: 2985727697670986705
     second: portal1_spritesheet_6
-  - first:
-      213: 7026185050075690631
-    second: portal1_spritesheet_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -130,13 +127,13 @@ TextureImporter:
       name: portal1_spritesheet_0
       rect:
         serializedVersion: 2
-        x: 6
+        x: 0
         y: 0
-        width: 19
-        height: 32
+        width: 26
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 6, y: 0, z: 1, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -151,12 +148,12 @@ TextureImporter:
       name: portal1_spritesheet_1
       rect:
         serializedVersion: 2
-        x: 38
+        x: 37
         y: 0
-        width: 19
-        height: 32
+        width: 20
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -175,10 +172,10 @@ TextureImporter:
         x: 69
         y: 0
         width: 20
-        height: 32
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 1, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -193,13 +190,13 @@ TextureImporter:
       name: portal1_spritesheet_3
       rect:
         serializedVersion: 2
-        x: 98
+        x: 102
         y: 0
-        width: 23
-        height: 32
+        width: 21
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 4, y: 0, z: 0, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 2, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -214,13 +211,13 @@ TextureImporter:
       name: portal1_spritesheet_4
       rect:
         serializedVersion: 2
-        x: 134
+        x: 133
         y: 0
-        width: 19
-        height: 32
+        width: 22
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 1, y: 0, z: 2, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -235,13 +232,13 @@ TextureImporter:
       name: portal1_spritesheet_5
       rect:
         serializedVersion: 2
-        x: 166
+        x: 165
         y: 0
-        width: 23
-        height: 32
+        width: 21
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 4, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 1, y: 0, z: 1, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -256,40 +253,19 @@ TextureImporter:
       name: portal1_spritesheet_6
       rect:
         serializedVersion: 2
-        x: 198
+        x: 196
         y: 0
-        width: 19
-        height: 32
+        width: 58
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 1, y: 0, z: 37, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 1db59bf958f6f6920800000000000000
       internalID: 2985727697670986705
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: portal1_spritesheet_7
-      rect:
-        serializedVersion: 2
-        x: 226
-        y: 0
-        width: 27
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 786fbe3a316028160800000000000000
-      internalID: 7026185050075690631
       vertices: []
       indices: 
       edges: []

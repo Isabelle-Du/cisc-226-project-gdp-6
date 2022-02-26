@@ -21,4 +21,9 @@ public class PauseUI : MonoBehaviour
         Time.timeScale = 1.0f;
         GameIsPaused = false;
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
