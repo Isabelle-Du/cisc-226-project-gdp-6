@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Game
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 106
+  controlID: 73
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -227,7 +227,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 107
+  controlID: 74
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -327,14 +327,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\19428\226 A2
+  m_LastProjectPath: C:\Users\19428\Documents\GitHub\cisc-226-project-gdp-6\226 A2
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 68430000
-    m_LastClickedID: 17256
-    m_ExpandedIDs: 0000000050430000524300005443000056430000584300005a4300005c4300005e430000604300006243000066430000
+    m_SelectedIDs: 8a430000
+    m_LastClickedID: 17290
+    m_ExpandedIDs: 00000000684300006a4300006c4300006e43000070430000724300007443000076430000784300007a43000082430000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -362,7 +362,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000050430000524300005443000056430000584300005a4300005c4300005e4300006043000062430000
+    m_ExpandedIDs: 00000000684300006a4300006c4300006e43000070430000724300007443000076430000784300007a430000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -483,9 +483,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 76430000
+      m_SelectedIDs: 20570000
       m_LastClickedID: 0
-      m_ExpandedIDs: e805ffff0c07ffffd409ffff6a0affff660dffff340effff161dffff3a23ffffa023ffff3641ffffce42ffffce44ffff3c49ffff9a49ffff084affffee51fffff851ffff8452ffff52e5ffff50e9ffffa0e9ffff52f9ffff66fbffffae6100006e620000986200007e650000ee8c0000fe8c0000328d0000a68f0000b68f00004292000096ad000038b4000048b4000064bd0000f4be000082c10000f6c1000098c30000
+      m_ExpandedIDs: c8f6ffff12f8ffff5efbffff24430000344300007a6000001c620000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
