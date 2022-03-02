@@ -193,7 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CISC 226 Group 26
+  m_Text: CISC 226 Group 6
 --- !u!222 &393713661
 CanvasRenderer:
   m_ObjectHideFlags: 0
