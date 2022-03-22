@@ -4,21 +4,14 @@ using UnityEngine;
 
 public class Fog : MonoBehaviour
 {
-    public GameObject GroundMid;
-    public GameObject Fog1;
+    public GameObject ground;
+    public GameObject fog;
 
-    public GameObject GroundLeft;
-    public GameObject Fog2;
-
-    public GameObject GroundFinish;
-    public GameObject Fog3;
-
-    public GameObject GroundRight;
-    public GameObject Fog4;
+    private GameObject player;
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
@@ -29,21 +22,9 @@ public class Fog : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.gameObject == GroundMid)
+        if(other.gameObject == player)
         {
-            GameObject.Destroy(Fog1);
-        }
-        else if(other.gameObject == GroundLeft)
-        {
-            GameObject.Destroy(Fog2);
-        }
-        else if(other.gameObject == GroundFinish)
-        {
-            GameObject.Destroy(Fog3);
-        }
-        else if(other.gameObject == GroundRight)
-        {
-            GameObject.Destroy(Fog4);
+            GameObject.Destroy(fog);
         }
     }
 }

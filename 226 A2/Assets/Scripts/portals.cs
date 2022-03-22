@@ -38,7 +38,6 @@ public class portals : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Sucess!");
             isDoor = false;
         }
     }
