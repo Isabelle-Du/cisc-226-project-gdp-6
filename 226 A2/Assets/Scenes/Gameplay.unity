@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deaf4f9051b9d294383c16ed8d40bc3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roundTime: 30
+  roundTime: 9999
   respawn: {fileID: 1462900495}
 --- !u!4 &24310624
 Transform:
@@ -2300,6 +2300,7 @@ GameObject:
   - component: {fileID: 807891158}
   - component: {fileID: 807891159}
   - component: {fileID: 807891160}
+  - component: {fileID: 807891161}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2368,7 +2369,7 @@ SpriteRenderer:
   m_SortingLayerID: 1718678131
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6447722072507503168, guid: 10f3cacccb0c4c547be76836eba20664, type: 3}
+  m_Sprite: {fileID: 2962027833772318483, guid: 10f3cacccb0c4c547be76836eba20664, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2453,6 +2454,25 @@ MonoBehaviour:
   Fog3: {fileID: 2044356940}
   GroundRight: {fileID: 289684415}
   Fog4: {fileID: 253799328}
+--- !u!95 &807891161
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807891154}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 002b1ff7f49e55745a654df82abb4756, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &812505170
 GameObject:
   m_ObjectHideFlags: 0
@@ -4842,7 +4862,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -458.1188, y: 294.05658}
+  m_AnchoredPosition: {x: -363.62, y: 291.56}
   m_SizeDelta: {x: 279.7624, y: 45.8868}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1697271783
