@@ -10,12 +10,19 @@ public class playerMovement : MonoBehaviour
     private BoxCollider2D ground;
     private bool isGround;
     private Animator anim;
+    private AudioSource jump;
+    private AudioSource walk;
+    private AudioSource coins;
     // Start is called before the first frame update
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
         ground = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
+        var audio = GetComponents(typeof(AudioSource));
+        jump = (AudioSource)audio[0];
+        coins = (AudioSource)audio[1];
+        walk = (AudioSource)audio[2];
     }
 
     // Update is called once per frame
@@ -29,9 +36,24 @@ public class playerMovement : MonoBehaviour
         else if(Input.GetKey(KeyCode.RightArrow) || Input.GetKey("d"))
         {
             transform.Translate(Vector2.right * speed * Time.deltaTime);
-            anim.SetInteger("RunningState", 1);
+            anim.SetInteger("RunningState", 1);           
         }
-
+        if(Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown("a"))
+        {
+            walk.Play();
+        }
+        if(Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp("a"))
+        {
+            walk.Stop();
+        }
+        else if(Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown("d"))
+        {
+            walk.Play();
+        }
+        if(Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp("d"))
+        {
+            walk.Stop();
+        }
         if(Input.GetButtonDown("Jump"))
         {
             if(ground.IsTouchingLayers(LayerMask.GetMask("Ground")))
@@ -39,6 +61,7 @@ public class playerMovement : MonoBehaviour
                 Vector2 jumpVel = new Vector2(0.0f, jumpSpeend);
                 myRigidbody.velocity = Vector2.up * jumpVel;
                 anim.SetInteger("RunningState", 2);
+                jump.Play();
             }
 
         }
@@ -46,6 +69,14 @@ public class playerMovement : MonoBehaviour
         if(Mathf.Abs(myRigidbody.velocity.y) == 0.0f && Mathf.Abs(myRigidbody.velocity.x) == 0.0f)
         {
             anim.SetInteger("RunningState", 0);
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Collections"))
+        {
+            coins.Play();
         }
     }
 }

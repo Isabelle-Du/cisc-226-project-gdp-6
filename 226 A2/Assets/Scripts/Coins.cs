@@ -2,29 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Colloections : MonoBehaviour
+public class Coins : MonoBehaviour
 {
     public GameObject coin;
-    private GameObject player;
-    public int num;
+
+    private Transform playerTransForm;
+    private bool isCoin;
+    private AudioSource audio;
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        playerTransForm = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if(other.gameObject == player)
+        if(isCoin)
         {
             GameObject.Destroy(coin);
-            num += 1;
         }
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            audio.Play();
+            isCoin = true;
+        }
+    }
+
 }

@@ -7,6 +7,7 @@ TagManager:
   - Fog
   - Collections
   - Score
+  - effect
   layers:
   - Default
   - TransparentFX
@@ -41,16 +42,16 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: Background
     uniqueID: 2107683519
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
   - name: Ground
     uniqueID: 2636853087
     locked: 0
-  - name: Tube
+  - name: Doors
     uniqueID: 3816404757
     locked: 0
   - name: Portals

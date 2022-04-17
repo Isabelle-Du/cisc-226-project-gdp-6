@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Switch : MonoBehaviour
 {
-    public float roundTime = 3;
+    public float roundTime;
     public Transform por1;
-    public Transform  por2;
+    public Transform por2;
 
     private float time;
     private Vector2 start;

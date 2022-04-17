@@ -8,6 +8,6 @@ public class Finish : MonoBehaviour
     // Start is called before the first frame update
     public void Restart()
     {
-        SceneManager.LoadScene("Gameplay");
+        SceneManager.LoadScene("Choosing");
     }
 }

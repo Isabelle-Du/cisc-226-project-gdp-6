@@ -4,27 +4,30 @@ using UnityEngine;
 
 public class Fog : MonoBehaviour
 {
-    public GameObject ground;
     public GameObject fog;
+    private bool Istouched;
 
-    private GameObject player;
+    private Transform playerTransForm;
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        playerTransForm = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(Istouched)
+        {
+            fog.GetComponent<Disappear>().enabled = true;
+        }
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject == player)
+        if (other.gameObject.CompareTag("Player"))
         {
-            GameObject.Destroy(fog);
+            Istouched = true;          
         }
     }
 }

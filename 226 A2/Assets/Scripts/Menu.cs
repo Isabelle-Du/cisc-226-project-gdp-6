@@ -5,13 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+    private AudioSource audio;
+    void Start()
+    {
+        audio = GetComponent<AudioSource>();
+    }
     public void PlayGame()
     {
-        SceneManager.LoadScene("Gameplay");
+        audio.Play();
+        SceneManager.LoadScene("Choosing");
     }
 
     public void QuitGame()
     {
+        audio.Play();
         Application.Quit();
     }
 }

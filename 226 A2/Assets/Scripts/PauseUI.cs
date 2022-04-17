@@ -7,23 +7,32 @@ public class PauseUI : MonoBehaviour
 {
     public static bool GameIsPaused = true;
     public GameObject Pause;
+    private AudioSource audio;
+
+    void Start()
+    {
+        audio = GetComponent<AudioSource>();
+    }
 
     public void Resume()
     {
-        Pause.SetActive(false);
+        audio.Play();
         Time.timeScale = 1.0f;
+        Pause.SetActive(false);
         GameIsPaused = false;
     }
 
     public void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        audio.Play();
         Time.timeScale = 1.0f;
-        GameIsPaused = false;
+        SceneManager.LoadScene("Gameplay");
+        //GameIsPaused = false;
     }
 
     public void QuitGame()
     {
+        audio.Play();
         Application.Quit();
     }
 }

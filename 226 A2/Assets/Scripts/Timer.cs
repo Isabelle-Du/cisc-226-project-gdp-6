@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
     public float roundTime;
-    public Transform respawn;
 
     private float time;
     private Transform playerTransForm;
