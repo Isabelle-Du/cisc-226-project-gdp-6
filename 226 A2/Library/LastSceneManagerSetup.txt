@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Teaching.unity
+- path: Assets/Scenes/Choosing.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

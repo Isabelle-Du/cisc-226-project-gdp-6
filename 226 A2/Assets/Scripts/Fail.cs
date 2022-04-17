@@ -14,7 +14,7 @@ public class Fail : MonoBehaviour
     }
     public void PlayGame()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("Choosing");
     }
 
     public void QuitGame()
