@@ -492,6 +492,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1076564993581948513, guid: 714be0fbba646924988cf66d8c6f3231, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 82555038}
+    - target: {fileID: 1076564993581948513, guid: 714be0fbba646924988cf66d8c6f3231, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayLevelI
+      objectReference: {fileID: 0}
+    - target: {fileID: 1076564993581948513, guid: 714be0fbba646924988cf66d8c6f3231, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ChoosingLevel, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1076564993581948527, guid: 714be0fbba646924988cf66d8c6f3231, type: 3}
       propertyPath: m_Name
       value: Level I
@@ -723,6 +735,18 @@ PrefabInstance:
     - target: {fileID: 1076564993581948512, guid: 714be0fbba646924988cf66d8c6f3231, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1076564993581948513, guid: 714be0fbba646924988cf66d8c6f3231, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 82555038}
+    - target: {fileID: 1076564993581948513, guid: 714be0fbba646924988cf66d8c6f3231, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayLevelII
+      objectReference: {fileID: 0}
+    - target: {fileID: 1076564993581948513, guid: 714be0fbba646924988cf66d8c6f3231, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ChoosingLevel, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1076564993581948527, guid: 714be0fbba646924988cf66d8c6f3231, type: 3}
       propertyPath: m_Name
