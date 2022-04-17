@@ -22,11 +22,11 @@ public class PauseUI : MonoBehaviour
         GameIsPaused = false;
     }
 
-    public void Restart()
+    public void BackToMenu()
     {
         audio.Play();
         Time.timeScale = 1.0f;
-        SceneManager.LoadScene("Gameplay");
+        SceneManager.LoadScene("Choosing");
         //GameIsPaused = false;
     }
 
